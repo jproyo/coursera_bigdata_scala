@@ -9,3 +9,5 @@ project/target
 project/project/target
 keys.store
 .idea
+wikipedia.dat
+stackoverflow.csv
