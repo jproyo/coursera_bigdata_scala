@@ -119,7 +119,7 @@ class StackOverflow extends Serializable {
       }
     }
 
-    scored.cache.flatMap { case (q, s) => q.tags.flatMap(tags => firstLangInTag(Some(tags), langs).map( index => (index*langSpread, s))) }.cache
+    scored.flatMap { case (q, s) => q.tags.flatMap(tags => firstLangInTag(Some(tags), langs).map( index => (index*langSpread, s))) }.cache
   }
 
 
